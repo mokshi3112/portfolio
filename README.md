@@ -17,7 +17,7 @@ The project consists of the following files:
    ```
 2. **Navigate to the Project Directory**:
    ```
-   cd portfolia
+   cd portfolio
    ```
 3. **Open `index.html`**: You can open the `index.html` file in your web browser to view the portfolio.
 
