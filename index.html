@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mokshith G | Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&family=Inter:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Particle BG (canvas) -->
+  <canvas id="particle-canvas"></canvas>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Mokshith G</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger-menu" aria-label="Toggle Navigation">
+        <i class="fas fa-bars open"></i>
+        <i class="fas fa-times close"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-img-frame">
+        <img src="mokshi.jpg" alt="Mokshith G" class="hero-img"/>
+      </div>
+      <h1 class="hero-name">Mokshith G</h1>
+      <h2 class="hero-role">Entry-Level Software Developer | Python | Java | SQL | JavaScript | Passion for Problem Solving</h2>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section animate-in">
+      <div class="card">
+          <h2>About Me</h2>
+          <p class="about-bio">
+            A proficient and innovative Computer Science Engineer, eager to leverage technical skills in software development, problem-solving, and system optimization. Seeking a challenging role to contribute to cutting-edge projects while continuously enhancing expertise in industry-standard tools and technologies.
+          </p>
+          <div class="skills-badges">
+            <span class="badge">Java</span>
+            <span class="badge">Python</span>
+            <span class="badge">Data Structures and Algorithms</span>
+            <span class="badge">Full Stack Development</span>
+            <span class="badge">Blockchain</span>
+          </div>
+      </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="section animate-in">
+      <div class="card">
+          <div class="resume-header">
+            <h2>Resume</h2>
+            <a href="MOKSHITH RESUME.pdf" download class="btn-accent"><i class="fas fa-download"></i>Download Resume</a>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-title">B.E. Computer Science and Engineering</span>
+                <span class="timeline-date">2022–2026</span>
+                <p>Navkis College of Engineering, Hassan (CGPA: 7.7)</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-title">Class XII Science</span>
+                <span class="timeline-date">2020–2022</span>
+                <p>Sai Angels PU College, CKM (87.6%)</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-title">Class X</span>
+                <span class="timeline-date">2019–2020</span>
+                <p>St Mary's School, CKM (80%)</p>
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section animate-in">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Student Academic Records using Blockchain</h3>
+        <p>A secure and immutable system for managing student academic records using Blockchain technology, ensuring data integrity and verifiability.</p>
+        <a href="https://github.com/yourusername/academic-records-blockchain" target="_blank" class="btn-link">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Modern, responsive portfolio site with animated effects and clean design (this site!).</p>
+        <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn-link">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Credit Card Fraud Detection</h3>
+        <p>Machine learning model to detect fraudulent credit card transactions using Python, Scikit-learn, and Pandas.</p>
+        <a href="https://github.com/yourusername/fraud-detection-ml" target="_blank" class="btn-link">View Code</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section card animate-in">
+    <h2>Contact Me</h2>
+    <form class="contact-form" autocomplete="off">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required/>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required/>
+      </div>
+      <div class="form-group">
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn-accent">Send Message</button>
+      <span class="form-success" style="display:none;">Thank you! I'll be in touch.</span>
+    </form>
+    <div class="social-links">
+      <a href="mailto:mokshith3112@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/yourusername" class="social-icon" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/mokshith-g-a93088340/" class="social-icon" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+  
+  <footer>
+    &copy; 2025 Mokshith G. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
